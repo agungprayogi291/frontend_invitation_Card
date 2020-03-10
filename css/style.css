@@ -94,8 +94,6 @@ section{
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 .offcanvas #page {
@@ -103,8 +101,6 @@ section{
   position: absolute;
 }
 .offcanvas #page:after {
-  -webkit-transition: 2s;
-  -o-transition: 2s;
   transition: 2s;
   position: absolute;
   top: 0;
@@ -185,9 +181,6 @@ section{
   padding: 30px;
   width: 100%;
   float: left;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
   border-radius: 4px;
 }
 @media screen and (max-width: 768px) {
