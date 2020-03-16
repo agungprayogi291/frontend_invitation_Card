@@ -13,6 +13,7 @@ body {
   line-height: 1.7;
   color: #828282;
   background: #fff;
+  overflow: auto;
 }
 
 a {
@@ -44,10 +45,10 @@ section{
 	font-family: 'roboto';
 }
 
-.row{
+/* .row{
 	width: 100%;
 	height: 150px;
-}
+} */
 .profile{
 	margin-left: 45px;
 	margin-right: 20px;
@@ -67,7 +68,7 @@ section{
 }
 /* jumbotron */
 .jumbotron{
-  height: 320px;
+  height: 420px !important;
   position: relative;
 }
 .jumbotron::after{
@@ -82,7 +83,7 @@ section{
 }
 .jumbotron h1{
   font-weight: bold;
-  font-size: 64px;
+  font-size: 32px !important;
   font-family:'Bellota', cursive;;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   color: white;
@@ -90,6 +91,7 @@ section{
 .jumbotron .container{
   z-index: 2;
   position: relative;
+  margin-top: 40px !important;
 }
 .name-penganten{
 
@@ -109,6 +111,28 @@ section{
   font-size: 18px;
   padding-bottom: 20px;
 
+}
+
+/* pesan */
+.pesan h1{
+  font-weight: bold;
+  font-size:64px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.pesan .card{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.pesan{
+margin-top: -280px !important;
+}
+/* footer */
+footer{
+
+  height: 100%;  
+}
+footer p{
+  font-size: 18px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 /* canvas page halaman */
 #page {
@@ -138,6 +162,9 @@ section{
 #Acara{
   margin-top: 450px;
   height: 1000px;
+}
+#Acara .container{
+  margin-left: -20px;
 }
 .event{
   margin-left: 50px;
@@ -500,13 +527,25 @@ section{
     margin-top: 50px;
     height: 800px;
   }
-  
-  div[id="galery"]{
-    margin-top: 900px;
+  #Acara .container{
+    margin-left: 160px;
   }
+ #galery{
+    margin-top: 900px;
+    height: 840px !important;
+  }
+  .jumbotron{
+    height: 640px;
+  }
+  .jumbotron h1{
+    font-size: 64px;
+  }
+  .pesan{
+    margin-top: 20px !important;
+    }
 }
 
-div[class="story"]{
+#story{
   clear: both;
 }
 
@@ -515,7 +554,7 @@ div[class="story"]{
 
 
 @media screen and (min-width: 320px) and (max-width: 640px){
-  div[id="banner"]{
+  #banner{
     height: 200px;
   }
   .name-penganten h1{
@@ -523,12 +562,12 @@ div[class="story"]{
     padding-top: 0px;
 
   }
-  div[id="galery"]{
+#galeery{
     
     margin-top: 1300px;
     
   }
-  section[id="pesan"]{
+  /* section[id="pesan"]{
     margin-top: 200px;
      width: 200px;
 
@@ -536,7 +575,6 @@ div[class="story"]{
    .card{
 
     margin-top: 100px;
-     height: 375px;
      box-shadow: 0px 1px 4px black;
   }
    input[id="row"]{
@@ -553,9 +591,9 @@ div[class="story"]{
   textarea{
 
     margin-top: -150px; resize: none;
-  }
+  } */
  
-  button[id="send"]{
+  /* button[id="send"]{
     margin-top: -270px;
     width: 100px;
   }
@@ -564,13 +602,13 @@ div[class="story"]{
     height: 100px;
     background-color: black;
     margin-top: 150px;
-  }
- #footer{
+  } */
+ /* #footer{
  
   font-size: 18px;
 
- }
- div[id="carouselExampleIndicators"]{
+ } */
+#carouselExampleIndicators{
   margin-top: -450px;
  }
 }
@@ -580,45 +618,44 @@ div[class="story"]{
   .name-penganten h1{
     font-size: 26px;
   }
-  div[id="galery"]{
+#galery{
 
     margin-top: 800px;
     height: 550px;
 
   }
-  div[id="carouselExampleIndicators"]{
+ #carouselExampleIndicators{
   margin-top: -550px;
  }
 
-  section[id="pesan"]{
+  /* section[id="pesan"]{
     margin-top: 500px;
-     width: 400px;
-  }
-   .card{
-    height: 450px;
+
+  } */
+   /* .card{
     box-shadow: 0px 4px 4px black;
-  }
-  textarea{
+  } */
+  /* textarea{
     margin-top: -200px; resize: none;
-  } 
-    button{
+  }  */
+    /* button{
     width: 350px;
     margin-top: -275px;
     width: 100%;
-  }
-    footer{
+  } */
+    /* footer{
     height: 100px;
     background-color: black;
     margin-top: 150px;
   
     
-  }
+  } */
 
 
-  input[id="row2"]{
+  /* input[id="row2"]{
    
     margin-top: -100px;
-  }
+  } */
 
  
 }
@@ -631,13 +668,13 @@ div[class="story"]{
     margin-top: 1000px;
     height: 650px;
   } */
-  section[id="pesan"]{
+  /* section[id="pesan"]{
     margin-top: 500px;
     width: 800px;
 
-  }
+  } */
 
-  
+/*   
   input[id="row2"]{
    
     margin-top: -100px;
@@ -658,7 +695,7 @@ div[class="story"]{
     margin-top: -475px;
     width: 100%;
   }
-
+ */
 
 
 }
@@ -666,51 +703,29 @@ div[class="story"]{
   
 
 @media (min-width: 576px) { 
-  div[id="galery"]{
+#galery{
   height:650px;
  }
- div[id="carouselExampleIndicators"]{
+#carouselExampleIndicators{
   margin-top: -550px;
  }
 
- section[id="pesan"]{
-    margin-top: 150px;
-     width: 500px;
-
-
-  }
-  textarea{
-    margin-top: -200px; resize: none;
-
-  }
-   input[id="row"]{
-      width: 195px;
-  
-  }
-  input[id="row1"]{
-      width: 230px;
-    margin-top: 0px;
-  }
-  input[id="row2"]{
-   
-    margin-top: -100px;
-    width: 460px;
-  }
+/* 
    .card{
-    height:500px;
-    box-shadow: 0px 4px 4px black;
-  }
-   button[id="send"]{
+   
+    box-shadow: 0px 4 px 4px black;
+  } */
+   /* button[id="send"]{
     margin-top: -300px;
     width: 100%;
-  }
+  } */
  }
 
-div[id="banner"]{
+#banner{
   height: 600px;
 }
 /* css fotrer */
-.footer{
+/* .footer{
   margin-top: 85px;
    background: #303036;
    color: #d3d3d3;
@@ -734,28 +749,29 @@ div[id="banner"]{
   }
 .card{
     height: 400px;
-     box-shadow: 0px 1px 4px black;
-     padding: ;
-     
-  
+     box-shadow: 0px 1px 2px black;
 
-  }
+}
  footer{
     height: 100px;
     background-color: black;
     margin-top: 150px;
   
     
-  }
+  } */
   
-div[id="galery"]{
+#galery{
   height: 750px;
 }
- section[id="pesan"]{
+ /* section[id="pesan"]{
     margin-top: 200px;
     
-  }
-div[class="panel-body"]{
+  } */
+.panel-body{
+  overflow: hidden;
   box-shadow: 2px 2px 0px black;
   border: 2px solid black;
+}
+.carousel-item{
+  height: 400px;
 }
