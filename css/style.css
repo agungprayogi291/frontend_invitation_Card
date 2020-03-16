@@ -535,10 +535,10 @@ footer p{
     height: 840px !important;
   }
   .jumbotron{
-    height: 640px;
+    height: 640px !important;
   }
   .jumbotron h1{
-    font-size: 64px;
+    font-size: 64px !important;
   }
   .pesan{
     margin-top: 20px !important;
